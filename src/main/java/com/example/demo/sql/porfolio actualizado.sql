@@ -68,6 +68,8 @@ create table proyectos(
 
 create table usuarios(
 	dni int primary key,
+    usuario varchar(30),
+    email varchar(50),
     paswoord varchar(15)
 );
 

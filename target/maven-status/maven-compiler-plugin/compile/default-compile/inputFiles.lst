@@ -1,42 +1,42 @@
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\services\proyecto\I_ProyectoService.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\repositories\ProyectoRepository.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\services\usuario\UsuarioService.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\services\educacion\I_EducacionService.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\controllers\CursoController.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\PorfolioApplication.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\controllers\HabilidadController.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\entities\Proyecto.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\entities\Habilidad.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\repositories\HabilidadRepository.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\entities\Usuario.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\repositories\DomicilioRepository.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\controllers\EducacionController.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\services\habilidad\I_HabilidadService.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\entities\Experiencia_Laboral.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\services\educacion\EducacionService.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\repositories\PersonaRepository.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\services\habilidad\HabilidadService.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\services\curso\I_CursoService.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\services\usuario\I_UsuarioService.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\services\domicilio\DomicilioService.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\WebConfig.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\controllers\DomicilioController.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\repositories\Experiencia_LaboralRepository.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\entities\Persona.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\services\curso\CursoService.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\repositories\CursoRepository.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\entities\Curso.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\services\experiencia\ExperienciaService.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\controllers\ProyectoController.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\repositories\EducacionRepository.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\entities\Educacion.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\entities\Domicilio.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\repositories\UsuarioRepository.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\services\persona\PersonaService.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\controllers\ExperienciaController.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\services\domicilio\I_DomicilioService.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\services\persona\I_PersonaService.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\services\proyecto\ProyectoService.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\controllers\UsuarioController.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\services\experiencia\I_ExperienciaService.java
-C:\Users\Lucas\Desktop\porfolio\src\main\java\com\example\demo\controllers\PersonaController.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\controllers\PersonaController.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\controllers\ExperienciaController.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\entities\Curso.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\entities\Persona.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\controllers\DomicilioController.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\repositories\ProyectoRepository.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\services\usuario\UsuarioService.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\services\habilidad\I_HabilidadService.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\repositories\HabilidadRepository.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\repositories\UsuarioRepository.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\controllers\HabilidadController.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\controllers\UsuarioController.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\controllers\CursoController.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\repositories\PersonaRepository.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\WebConfig.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\services\educacion\I_EducacionService.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\controllers\ProyectoController.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\entities\Educacion.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\services\persona\PersonaService.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\services\proyecto\ProyectoService.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\repositories\Experiencia_LaboralRepository.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\entities\Habilidad.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\repositories\DomicilioRepository.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\services\persona\I_PersonaService.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\repositories\EducacionRepository.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\entities\Experiencia_Laboral.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\services\domicilio\I_DomicilioService.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\services\proyecto\I_ProyectoService.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\controllers\EducacionController.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\PorfolioApplication.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\services\domicilio\DomicilioService.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\services\curso\CursoService.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\services\experiencia\I_ExperienciaService.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\services\habilidad\HabilidadService.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\entities\Proyecto.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\repositories\CursoRepository.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\services\curso\I_CursoService.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\entities\Usuario.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\services\educacion\EducacionService.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\services\experiencia\ExperienciaService.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\entities\Domicilio.java
+C:\Users\Lucas\Desktop\porfolio - copia\src\main\java\com\example\demo\services\usuario\I_UsuarioService.java

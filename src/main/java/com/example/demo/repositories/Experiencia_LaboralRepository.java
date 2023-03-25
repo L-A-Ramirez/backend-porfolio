@@ -2,8 +2,10 @@ package com.example.demo.repositories;
 
 
 import com.example.demo.entities.Experiencia_Laboral;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface Experiencia_LaboralRepository extends CrudRepository<Experiencia_Laboral,Integer> {
+@Repository
+public interface Experiencia_LaboralRepository extends JpaRepository<Experiencia_Laboral,Integer> {
 
 }

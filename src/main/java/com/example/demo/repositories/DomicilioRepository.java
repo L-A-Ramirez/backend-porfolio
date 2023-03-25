@@ -1,8 +1,10 @@
 package com.example.demo.repositories;
 
 import com.example.demo.entities.Domicilio;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface DomicilioRepository extends CrudRepository<Domicilio,Integer>{
+@Repository
+public interface DomicilioRepository extends JpaRepository<Domicilio,Integer> {
 
 }
