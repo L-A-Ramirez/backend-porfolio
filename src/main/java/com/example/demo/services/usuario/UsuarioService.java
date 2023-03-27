@@ -16,8 +16,12 @@ public class UsuarioService implements I_UsuarioService {
     @Autowired
     private UsuarioRepository repository;
 
+    public UsuarioService(UsuarioRepository repository) {
+        this.repository = repository;
+    }
+
     public List<Usuario> getAll() {
-        return (List<Usuario>) repository.findAll();
+        return repository.findAll();
     }
     public void save(Usuario usuario) {
         repository.save(usuario);
@@ -32,6 +36,7 @@ public class UsuarioService implements I_UsuarioService {
     public Optional<Usuario> getByEmail(String email){
         return repository.findbyEmail(email);
     }
+
     public boolean existsByDni(Integer dni){
         return repository.existsByDni(dni);
     }
