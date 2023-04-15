@@ -1,11 +1,14 @@
-drop database if exists porfolio; -- borramos la base de datos si es que existe
-create database porfolio; -- creamos la base de datos
-use porfolio; -- usamos la base de datos
+-- drop database if exists porfolio; -- borramos la base de datos si es que existe
+-- create database porfolio; -- creamos la base de datos
+-- use porfolio; -- usamos la base de datos
+show databases;
 
-show databases; -- mostramos las bases de datos existenes
-show tables; -- vemos las tablas contenidas en la base de datos
+use b4eadurwdsysrxybiqud;
 
-create table personas(
+-- show databases; -- mostramos las bases de datos existenes
+-- show tables; -- vemos las tablas contenidas en la base de datos
+
+create table if not exists personas(
 	dni int primary key,
     nombre varchar(25),
     apellido varchar(25),
@@ -15,7 +18,7 @@ create table personas(
     acercademi char(255)
 );
 
-create table experiencia_laboral(
+create table if not exists experiencia_laboral(
 	id int auto_increment primary key,
     trabajo varchar(25),
     puesto varchar(25),
@@ -25,7 +28,7 @@ create table experiencia_laboral(
     dni_persona int
 );
 
-create table domicilio(
+create table if not exists domicilio(
 	id int auto_increment primary key,
     pais varchar(25),
     provincia varchar(25),
@@ -33,7 +36,7 @@ create table domicilio(
     dni_persona int
 );
 
-create table educacion(
+create table if not exists educacion(
 	id int auto_increment primary key,
     titulo varchar(50),
     ingreso year,
@@ -41,7 +44,7 @@ create table educacion(
     dni_persona int
 );
 
-create table habilidades(
+create table if not exists habilidades(
 	id int auto_increment primary key,
     nombre varchar(25),
     porcentaje int(10),
@@ -49,7 +52,7 @@ create table habilidades(
     dni_persona int
 );
 
-create table cursos(
+create table if not exists cursos(
 	id int auto_increment primary key,
     nombre char(150),
     carga_horaria int(3),
@@ -57,7 +60,7 @@ create table cursos(
     dni_persona int
 );
 
-create table proyectos(
+create table if not exists proyectos(
 	id int auto_increment primary key,
     nombre varchar(25),
     project_inicio date,
@@ -66,7 +69,7 @@ create table proyectos(
     dni_persona int
 );
 
-create table usuarios(
+create table if not exists usuarios(
     id int primary key auto_increment,
 	nombre varchar(30),
     nombreUsuario varchar(30),
