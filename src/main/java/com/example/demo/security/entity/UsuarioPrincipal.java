@@ -1,6 +1,5 @@
 package com.example.demo.security.entity;
 
-import com.example.demo.entities.Usuario;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -31,7 +30,6 @@ public class UsuarioPrincipal implements UserDetails {
                 .collect(Collectors.toList());
         return new UsuarioPrincipal(usuario.getEmail(),usuario.getPassword(),authorities);
     }
-
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

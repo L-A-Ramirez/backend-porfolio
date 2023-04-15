@@ -1,8 +1,7 @@
 package com.example.demo.security.service;
 
-import com.example.demo.entities.Usuario;
+import com.example.demo.security.entity.Usuario;
 import com.example.demo.security.entity.UsuarioPrincipal;
-import com.example.demo.services.usuario.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -15,8 +14,8 @@ public class UserDetailsImplements implements UserDetailsService {
     UsuarioService service;
 
     @Override
-    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        Usuario usuario = service.getByEmail(email).get();
+    public UserDetails loadUserByUsername(String nombreUsuario) throws UsernameNotFoundException {
+        Usuario usuario = service.getByNombreUsuario(nombreUsuario).get();
         return UsuarioPrincipal.build(usuario);
     }
 }

@@ -1,6 +1,6 @@
 package com.example.demo.security.controller;
 
-import com.example.demo.entities.Usuario;
+import com.example.demo.security.entity.Usuario;
 import com.example.demo.security.dto.JwtDto;
 import com.example.demo.security.dto.LoginUsuario;
 import com.example.demo.security.dto.NuevoUsuario;
@@ -8,7 +8,7 @@ import com.example.demo.security.entity.Rol;
 import com.example.demo.security.enums.RolEmail;
 import com.example.demo.security.jwt.JwtProvider;
 import com.example.demo.security.service.RolService;
-import com.example.demo.services.usuario.UsuarioService;
+import com.example.demo.security.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -44,16 +44,14 @@ public class AuthController {
     public ResponseEntity<?> nuevo(@Validated @RequestBody NuevoUsuario nuevoUsuario, BindingResult bindingResult){
         if(bindingResult.hasErrors())return new ResponseEntity(new Mensaje("Campos mal puestos o email invalido"), HttpStatus.BAD_REQUEST);
 
-        if(usuarioService.existsByDni(nuevoUsuario.getDni())) return new ResponseEntity(new Mensaje("Ese Dni de usuario ya existe"), HttpStatus.BAD_REQUEST);
-
-        if(usuarioService.existsByUsuario(nuevoUsuario.getNombreUsuario())) return new ResponseEntity(new Mensaje("Ese nombre de usuario ya existe"), HttpStatus.BAD_REQUEST);
+        if(usuarioService.existsByNombreUsuario(nuevoUsuario.getNombre())) return new ResponseEntity(new Mensaje("Ese Dni de usuario ya existe"), HttpStatus.BAD_REQUEST);
 
         if(usuarioService.existsByEmail(nuevoUsuario.getEmail())) return new ResponseEntity(new Mensaje("Ese nombre de usuario ya existe"), HttpStatus.BAD_REQUEST);
 
         Usuario usuario = new Usuario(
-                nuevoUsuario.getDni(),
-                nuevoUsuario.getEmail(),
+                nuevoUsuario.getNombre(),
                 nuevoUsuario.getNombreUsuario(),
+                nuevoUsuario.getEmail(),
                 passwordEncoder.encode(nuevoUsuario.getPassword())
         );
 

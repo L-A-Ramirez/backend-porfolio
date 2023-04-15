@@ -24,6 +24,9 @@ public class Proyecto {
     private Date project_inicio;
     private Date project_fin;
     private String descripcion;
+    @ManyToOne
+    @JoinColumn(name = "dni_persona", insertable = false, updatable = false)
+    private Persona persona;
     private Integer dni_persona;
 
 }

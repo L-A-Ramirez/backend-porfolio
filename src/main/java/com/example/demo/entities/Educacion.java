@@ -1,6 +1,7 @@
 package com.example.demo.entities;
 
 import javax.persistence.*;
+import javax.persistence.JoinColumn;
 
 import lombok.*;
 
@@ -23,6 +24,21 @@ public class Educacion {
     private String titulo;
     private String ingreso;
     private String egreso;
+
+    @ManyToOne
+    @JoinColumn(name = "dni_persona", insertable = false, updatable = false)
+    private Persona persona;
     private Integer dni_persona;
+
+    public Educacion() {
+    }
+
+    public Educacion(Integer id, String titulo, String ingreso, String egreso, Persona persona) {
+        this.id = id;
+        this.titulo = titulo;
+        this.ingreso = ingreso;
+        this.egreso = egreso;
+        this.persona = persona;
+    }
 
 }

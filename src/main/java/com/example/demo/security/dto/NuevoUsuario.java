@@ -8,7 +8,8 @@ import java.util.Set;
 
 @Getter @Setter
 public class NuevoUsuario {
-    private Integer dni;
+    private Integer id;
+    private String nombre;
     private String nombreUsuario;
     private String email;
     private String password;

@@ -20,5 +20,8 @@ public class Curso {
     private String nombre;
     private Integer carga_horaria;
     private String centro;
+    @ManyToOne
+    @JoinColumn(name = "dni_persona", insertable = false, updatable = false)
+    private Persona persona;
     private Integer dni_persona;
 }

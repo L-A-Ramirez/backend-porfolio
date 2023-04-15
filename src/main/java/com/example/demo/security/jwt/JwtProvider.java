@@ -1,35 +1,36 @@
 package com.example.demo.security.jwt;
 
+
 import com.example.demo.security.entity.UsuarioPrincipal;
-import io.jsonwebtoken.*;
-import io.jsonwebtoken.security.SignatureException;
+import io.jsonwebtoken.ExpiredJwtException;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.MalformedJwtException;
+import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.SignatureException;
+import io.jsonwebtoken.UnsupportedJwtException;
+import java.util.Date;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Component;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.util.Date;
 
 @Component
 public class JwtProvider {
     private final static Logger logger = LoggerFactory.getLogger(JwtProvider.class);
 
-    @Value("$(jwt.secret)")
+
+    @Value("${jwt.secret}")
     private String secret;
-    @Value("$(jwt.expiration)")
+
+    @Value("${jwt.expiration}")
     private int expiration;
 
     public String generateToken(Authentication authentication){
         UsuarioPrincipal usuarioPrincipal = (UsuarioPrincipal) authentication.getPrincipal();
         return Jwts.builder().setSubject(usuarioPrincipal.getUsername())
                 .setIssuedAt(new Date())
-                .setExpiration(new Date(new Date().getTime()+expiration*1000))
+                .setExpiration(new Date(new Date().getTime()+expiration *1000))
                 .signWith(SignatureAlgorithm.HS512, secret)
                 .compact();
     }
@@ -56,5 +57,4 @@ public class JwtProvider {
         }
         return false;
     }
-
 }

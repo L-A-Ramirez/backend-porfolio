@@ -26,5 +26,4 @@ public class Persona {
     private String mail;
     private String profesion;
     private String acercademi;
-
 }

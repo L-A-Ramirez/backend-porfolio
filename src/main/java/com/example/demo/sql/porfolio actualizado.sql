@@ -67,10 +67,11 @@ create table proyectos(
 );
 
 create table usuarios(
-	dni int primary key,
-    usuario varchar(30),
-    email varchar(50),
-    paswoord varchar(15)
+    id int primary key auto_increment,
+	nombre varchar(30),
+    nombreUsuario varchar(30),
+	email varchar(50),
+    password varchar(15)
 );
 
 ALTER TABLE experiencia_laboral
@@ -90,6 +91,3 @@ ADD FOREIGN KEY (dni_persona) REFERENCES personas(dni);
 
 ALTER TABLE proyectos
 ADD FOREIGN KEY (dni_persona) REFERENCES personas(dni);
-
-ALTER TABLE usuarios
-ADD FOREIGN KEY (dni) REFERENCES personas(dni);

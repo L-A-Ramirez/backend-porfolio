@@ -21,6 +21,9 @@ public class Domicilio {
     private String pais;
     private String provincia;
     private String localidad;
+    @ManyToOne
+    @JoinColumn(name = "dni_persona", insertable = false, updatable = false)
+    private Persona persona;
     private Integer dni_persona;
 
 }

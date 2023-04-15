@@ -21,5 +21,4 @@ INSERT INTO `porfolio`.`habilidades` (`nombre`, `porcentaje`, `dni_persona`) VAL
 
 INSERT INTO `porfolio`.`proyectos` (`nombre`, `project_inicio`, `project_fin`, `descripcion`, `dni_persona`) VALUES ('App Task', '2022-11-15', '2023-03-30', 'Agenda de tareas y recordatorios', '44884779');
 
-INSERT INTO `porfolio`.`usuarios` (`dni`,`email`,`usuario`,`paswoord`) VALUES ('44884779','Lucas4Alejandro4@gmail.com','Ralu','admin');
-
+INSERT INTO `porfolio`.`usuarios` (`nombre`,`nombreUsuario`,`email`,`password`) VALUES ('Lucas','Ralu','Lucas4Alejandro4@gmail.com','admin');

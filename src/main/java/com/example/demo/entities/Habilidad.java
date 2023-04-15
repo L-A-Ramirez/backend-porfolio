@@ -21,5 +21,8 @@ public class Habilidad {
     private String nombre;
     private Integer porcentaje;
     private String foto;
+    @ManyToOne
+    @JoinColumn(name = "dni_persona", insertable = false, updatable = false)
+    private Persona persona;
     private Integer dni_persona;
 }

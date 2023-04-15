@@ -23,5 +23,8 @@ public class Experiencia_Laboral {
     private String cargo;
     private String herramientas;
     private String referencia;
+    @ManyToOne
+    @JoinColumn(name = "dni_persona", insertable = false, updatable = false)
+    private Persona persona;
     private Integer dni_persona;
 }
