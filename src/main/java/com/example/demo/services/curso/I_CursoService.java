@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface I_CursoService {
     List<Curso> getAll();
-    void save(Curso persona);
+    void save(Curso curso);
     void remove(Integer id);
     Curso getById(Integer id);
 }

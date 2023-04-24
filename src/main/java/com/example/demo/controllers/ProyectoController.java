@@ -8,29 +8,36 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:4200","https://porfolio-yoprogramo.onrender.com"})
+@RequestMapping("api/proyectos")
+//@CrossOrigin(origins = "http://localhost:4200")
+//,"https://porfolio-yoprogramo.onrender.com"
 public class ProyectoController {
 
     @Autowired
     I_ProyectoService service;
 
-    @GetMapping("/api/proyectos")
+    @GetMapping("/lista")
     public List<Proyecto> getAll() {
         return service.getAll();
     }
 
-    @GetMapping("/api/proyectos/{id}")
+    @GetMapping("/{id}")
     public Proyecto getById(@PathVariable String id) {
         return service.getById(Integer.parseInt(id));
     }
 
-    @DeleteMapping("/api/proyectos/{id}")
+    @DeleteMapping("/delete/{id}")
     public void remove(@PathVariable String id) {
         service.remove(Integer.parseInt(id));
     }
 
-    @PostMapping("/api/proyectos")
+    @PostMapping("/create")
     public void save(@RequestBody Proyecto proyecto) {
+        service.save(proyecto);
+    }
+
+    @PutMapping("/update")
+    public void update(@RequestBody Proyecto proyecto) {
         service.save(proyecto);
     }
 }

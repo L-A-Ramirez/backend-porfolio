@@ -32,6 +32,7 @@ com\example\demo\PorfolioApplication.class
 com\example\demo\entities\Curso.class
 com\example\demo\entities\Persona.class
 com\example\demo\repositories\CursoRepository.class
+com\example\demo\security\enums\RolNombre.class
 com\example\demo\entities\Educacion.class
 com\example\demo\services\proyecto\ProyectoService.class
 com\example\demo\controllers\ProyectoController.class
@@ -44,7 +45,6 @@ com\example\demo\services\habilidad\I_HabilidadService.class
 com\example\demo\security\dto\NuevoUsuario.class
 com\example\demo\security\jwt\JwtEntryPoint.class
 com\example\demo\repositories\EducacionRepository.class
-com\example\demo\security\enums\RolEmail.class
 com\example\demo\security\dto\LoginUsuario.class
 com\example\demo\services\domicilio\DomicilioService.class
 com\example\demo\services\proyecto\I_ProyectoService.class

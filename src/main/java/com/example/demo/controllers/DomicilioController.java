@@ -8,29 +8,36 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:4200","https://porfolio-yoprogramo.onrender.com"})
+@RequestMapping("api/domicilios")
+//@CrossOrigin(origins = "http://localhost:4200")
+//,"https://porfolio-yoprogramo.onrender.com
 public class DomicilioController {
 
     @Autowired
     I_DomicilioService service;
 
-    @GetMapping("/api/domicilios")
+    @GetMapping("/lista")
     public List<Domicilio> getAll() {
         return service.getAll();
     }
 
-    @GetMapping("/api/domicilios/{id}")
+    @GetMapping("/{id}")
     public Domicilio getById(@PathVariable String id) {
         return service.getById(Integer.parseInt(id));
     }
 
-    @DeleteMapping("/api/domicilios/{id}")
+    @DeleteMapping("/delete/{id}")
     public void remove(@PathVariable String id) {
         service.remove(Integer.parseInt(id));
     }
 
-    @PostMapping("/api/domicilios")
+    @PostMapping("/create")
     public void save(@RequestBody Domicilio domicilio) {
+        service.save(domicilio);
+    }
+
+    @PutMapping("/update")
+    public void update(@RequestBody Domicilio domicilio) {
         service.save(domicilio);
     }
 }

@@ -24,7 +24,7 @@ public class UsuarioPrincipal implements UserDetails {
                 .stream()
                 .map(rol -> new SimpleGrantedAuthority
                         (
-                        rol.getRolEmail().name()
+                        rol.getRolNombre().name()
                         )
                 )
                 .collect(Collectors.toList());

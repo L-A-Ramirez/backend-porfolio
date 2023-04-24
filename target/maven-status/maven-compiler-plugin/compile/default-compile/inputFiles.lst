@@ -23,10 +23,12 @@ C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\entities\Domicilio.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\PorfolioApplication.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\repositories\Experiencia_LaboralRepository.java
+C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\cors\WebConfig.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\security\MainSecurity.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\services\educacion\I_EducacionService.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\security\controller\AuthController.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\services\persona\I_PersonaService.java
+C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\security\enums\RolNombre.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\entities\Curso.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\repositories\EducacionRepository.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\security\repository\UsuarioRepository.java
@@ -39,12 +41,12 @@ C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\security\service\UserDetailsImplements.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\services\curso\I_CursoService.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\services\experiencia\ExperienciaService.java
-C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\security\enums\RolEmail.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\repositories\DomicilioRepository.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\services\domicilio\I_DomicilioService.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\entities\Educacion.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\services\educacion\EducacionService.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\security\service\RolService.java
+C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\cors\CorsConfig.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\entities\Habilidad.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\entities\Persona.java
 C:\Users\Lucas\Desktop\tp final - update - copia\backend-porfolio\src\main\java\com\example\demo\repositories\CursoRepository.java

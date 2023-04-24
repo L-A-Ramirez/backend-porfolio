@@ -8,29 +8,36 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:4200","https://porfolio-yoprogramo.onrender.com"})
+@RequestMapping("api/cursos")
+//@CrossOrigin(origins = "http://localhost:4200")
+//,"https://porfolio-yoprogramo.onrender.com"
 public class CursoController {
 
     @Autowired
     private I_CursoService service;
 
-    @GetMapping("/api/cursos")
+    @GetMapping("/lista")
     public List<Curso> getAll() {
         return service.getAll();
     }
 
-    @GetMapping("/api/cursos/{id}")
+    @GetMapping("/{id}")
     public Curso getById(@PathVariable String id) {
         return service.getById(Integer.parseInt(id));
     }
 
-    @DeleteMapping("/api/cursos/{id}")
+    @DeleteMapping("delete/{id}")
     public void remove(@PathVariable String id) {
         service.remove(Integer.parseInt(id));
     }
 
-    @PostMapping("/api/cursos")
+    @PostMapping("/create")
     public void save(@RequestBody Curso curso) {
+        service.save(curso);
+    }
+
+    @PutMapping("/update")
+    public void update(@RequestBody Curso curso) {
         service.save(curso);
     }
 }

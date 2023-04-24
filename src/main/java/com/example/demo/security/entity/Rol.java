@@ -1,6 +1,6 @@
 package com.example.demo.security.entity;
 
-import com.example.demo.security.enums.RolEmail;
+import com.example.demo.security.enums.RolNombre;
 import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.Setter;
@@ -16,12 +16,12 @@ public class Rol {
     private int id;
     @NotNull
     @Enumerated(EnumType.STRING)
-    private RolEmail rolEmail;
+    private RolNombre rolNombre;
 
     public Rol() {
     }
 
-    public Rol(RolEmail rolEmail) {
-        this.rolEmail = rolEmail;
+    public Rol(RolNombre rolNombre) {
+        this.rolNombre = rolNombre;
     }
 }
