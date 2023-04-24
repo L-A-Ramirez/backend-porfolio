@@ -9,8 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/cursos")
-//@CrossOrigin(origins = "http://localhost:4200")
-//,"https://porfolio-yoprogramo.onrender.com"
+@CrossOrigin(origins = { "http://localhost:4200", "https://porfolio-yoprogramo.onrender.com"})
 public class CursoController {
 
     @Autowired
