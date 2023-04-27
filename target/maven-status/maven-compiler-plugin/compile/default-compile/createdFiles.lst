@@ -1,5 +1,4 @@
 com\example\demo\repositories\PersonaRepository.class
-com\example\demo\cors\WebConfig.class
 com\example\demo\entities\Proyecto.class
 com\example\demo\services\habilidad\HabilidadService.class
 com\example\demo\services\curso\I_CursoService.class
@@ -30,7 +29,6 @@ com\example\demo\services\persona\I_PersonaService.class
 com\example\demo\entities\Domicilio.class
 com\example\demo\controllers\ExperienciaController.class
 com\example\demo\PorfolioApplication.class
-com\example\demo\cors\CorsConfig.class
 com\example\demo\entities\Curso.class
 com\example\demo\entities\Persona.class
 com\example\demo\repositories\CursoRepository.class
