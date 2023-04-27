@@ -13,25 +13,5 @@ public class PorfolioApplication {
 		SpringApplication.run(PorfolioApplication.class, args);
 	}
 
-	@Configuration
-	public class WebConfig implements WebMvcConfigurer {
-
-
-		@Override
-		public void addResourceHandlers(ResourceHandlerRegistry registry) {
-			registry.addResourceHandler("/**")
-					.addResourceLocations("classpath:/static/");
-		}
-
-		@Override
-		public void addCorsMappings(CorsRegistry registry) {
-			registry.addMapping("/**")
-					.allowedOrigins("https://porfolio-project-1f13a.firebaseapp.com/")
-					.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-					.allowedHeaders("*")
-					.allowCredentials(true)
-					.maxAge(3600);
-		}
-	}
 
 }

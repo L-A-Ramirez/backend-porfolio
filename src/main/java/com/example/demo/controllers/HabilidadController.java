@@ -21,21 +21,25 @@ public class HabilidadController {
         return service.getAll();
     }
 
+    @CrossOrigin(origins = "https://backend-porfolio-ivqs.onrender.com")
     @GetMapping("/{id}")
     public Habilidad getById(@PathVariable String id) {
         return service.getById(Integer.parseInt(id));
     }
 
+    @CrossOrigin(origins = "https://backend-porfolio-ivqs.onrender.com")
     @DeleteMapping("/delete/{id}")
     public void remove(@PathVariable String id) {
         service.remove(Integer.parseInt(id));
     }
 
+    @CrossOrigin(origins = "https://backend-porfolio-ivqs.onrender.com")
     @PostMapping("/create")
     public void save(@RequestBody Habilidad habilidad) {
         service.save(habilidad);
     }
 
+    @CrossOrigin(origins = "https://backend-porfolio-ivqs.onrender.com")
     @PutMapping("/update")
     public void update(@RequestBody Habilidad habilidad) {
         service.save(habilidad);

@@ -9,32 +9,40 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/cursos")
-@CrossOrigin(origins = { "https://porfolio-project-1f13a.firebaseapp.com/", "https://porfolio-yoprogramo.onrender.com"})
+
 public class CursoController {
+
 
     @Autowired
     private I_CursoService service;
 
+    @CrossOrigin(origins = "https://backend-porfolio-ivqs.onrender.com")
     @GetMapping("/lista")
     public List<Curso> getAll() {
         return service.getAll();
     }
 
+    @CrossOrigin(origins = "https://backend-porfolio-ivqs.onrender.com")
     @GetMapping("/{id}")
     public Curso getById(@PathVariable String id) {
         return service.getById(Integer.parseInt(id));
     }
 
+    @CrossOrigin(origins = "https://backend-porfolio-ivqs.onrender.com")
     @DeleteMapping("delete/{id}")
     public void remove(@PathVariable String id) {
         service.remove(Integer.parseInt(id));
     }
 
+
+    @CrossOrigin(origins = "https://backend-porfolio-ivqs.onrender.com")
     @PostMapping("/create")
     public void save(@RequestBody Curso curso) {
         service.save(curso);
     }
 
+
+    @CrossOrigin(origins = "https://backend-porfolio-ivqs.onrender.com")
     @PutMapping("/update")
     public void update(@RequestBody Curso curso) {
         service.save(curso);

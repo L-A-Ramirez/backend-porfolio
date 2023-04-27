@@ -48,7 +48,6 @@ com\example\demo\repositories\EducacionRepository.class
 com\example\demo\security\dto\LoginUsuario.class
 com\example\demo\services\domicilio\DomicilioService.class
 com\example\demo\services\proyecto\I_ProyectoService.class
-com\example\demo\PorfolioApplication$WebConfig.class
 com\example\demo\security\entity\Usuario.class
 com\example\demo\services\domicilio\I_DomicilioService.class
 com\example\demo\security\dto\JwtDto.class
