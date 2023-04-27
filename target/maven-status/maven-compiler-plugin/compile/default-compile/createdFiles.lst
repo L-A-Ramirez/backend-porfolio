@@ -29,6 +29,7 @@ com\example\demo\services\persona\I_PersonaService.class
 com\example\demo\entities\Domicilio.class
 com\example\demo\controllers\ExperienciaController.class
 com\example\demo\PorfolioApplication.class
+com\example\demo\cors\CorsConfig.class
 com\example\demo\entities\Curso.class
 com\example\demo\entities\Persona.class
 com\example\demo\repositories\CursoRepository.class

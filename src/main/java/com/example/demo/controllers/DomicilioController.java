@@ -9,8 +9,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/domicilios")
-@CrossOrigin(origins = { "https://porfolio-project-1f13a.firebaseapp.com/", "https://porfolio-yoprogramo.onrender.com"})
-//,"https://porfolio-yoprogramo.onrender.com
 public class DomicilioController {
 
     @Autowired

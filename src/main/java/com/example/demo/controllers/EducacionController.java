@@ -9,8 +9,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/educacion")
-@CrossOrigin(origins = { "https://porfolio-project-1f13a.firebaseapp.com/", "https://porfolio-yoprogramo.onrender.com"})
-//,"https://porfolio-yoprogramo.onrender.com"
 public class EducacionController {
 
     @Autowired
