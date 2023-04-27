@@ -26,7 +26,7 @@ public class PorfolioApplication {
 		@Override
 		public void addCorsMappings(CorsRegistry registry) {
 			registry.addMapping("/**")
-					.allowedOrigins("https://porfolio-project-1f13a.firebaseapp.com/")
+					.allowedOrigins("https://porfolio-yoprogramo.onrender.com")
 					.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
 					.allowedHeaders("*")
 					.allowCredentials(true)
