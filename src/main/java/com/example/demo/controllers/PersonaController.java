@@ -15,7 +15,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("api/personas")
-@CrossOrigin(origins = { "http://localhost:4200", "https://porfolio-yoprogramo.onrender.com"})
+@CrossOrigin(origins = { "https://porfolio-project-1f13a.firebaseapp.com/", "https://porfolio-yoprogramo.onrender.com"})
 //,"https://porfolio-yoprogramo.onrender.com"
 public class PersonaController {
 
