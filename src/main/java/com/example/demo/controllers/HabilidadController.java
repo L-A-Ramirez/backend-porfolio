@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/habilidades")
+@CrossOrigin(origins={"https://porfolio-project-1f13a.web.app","porfolio.fly.dev","http://localhost:4200"})
 public class HabilidadController {
 
     @Autowired

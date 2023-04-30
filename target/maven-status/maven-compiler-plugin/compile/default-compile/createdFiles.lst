@@ -22,6 +22,7 @@ com\example\demo\entities\Habilidad.class
 com\example\demo\security\service\UserDetailsImplements.class
 com\example\demo\security\controller\AuthController.class
 com\example\demo\controllers\HabilidadController.class
+com\example\demo\PorfolioApplication$1.class
 com\example\demo\repositories\HabilidadRepository.class
 com\example\demo\security\MainSecurity.class
 com\example\demo\repositories\Experiencia_LaboralRepository.class
